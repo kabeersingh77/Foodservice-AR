@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect, CSSProperties } from 'react';
+import Aurora from "./components/Aurora";
 
 // export default function Home() {
 //   return (
@@ -189,7 +190,12 @@ const HeroSection: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden">
       {/* Background Gradient Effect */}
-      <div className="absolute inset-0 bg-linear-to-br from-[#EAE7DC] via-[#EAE7DC] to-[#D8C3A5] opacity-90"></div>
+      <Aurora
+      colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
+      blend={0.5}
+      amplitude={1.0}
+      speed={0.5}
+      />
 
       {/* CSS for Rotating Plate */}
       <style>{`
