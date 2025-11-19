@@ -1,3 +1,4 @@
+"use client";
 const MenuCard = ({ item }) => {
   const { title, description, price, imageUrl } = item;
   return (
